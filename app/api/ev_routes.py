@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from api.predict import predict_ev
+from predict.predict_ev import predict_ev
 
 router = APIRouter()
 
