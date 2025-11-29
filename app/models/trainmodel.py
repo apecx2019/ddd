@@ -4,13 +4,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from xgboost import XGBRegressor
 import joblib
+import matplotlib as plt
 
 # matplotlib สำหรับ plot (ถ้ายังไม่ได้ติดตั้ง: pip install matplotlib)
-try:
-    import matplotlib.pyplot as plt
-except ImportError:
-    print("matplotlib ไม่ถูกติดตั้ง หากต้องการกราฟ ให้รัน: pip install matplotlib")
-    plt = None
+# try:
+#     import matplotlib.pyplot as plt
+# except ImportError:
+#     print("matplotlib ไม่ถูกติดตั้ง หากต้องการกราฟ ให้รัน: pip install matplotlib")
+#     plt = None
 
 # 1️⃣ โหลด CSV
 data = pd.read_csv("../data/th_ev_sales_smart_city_cleaned.csv")
